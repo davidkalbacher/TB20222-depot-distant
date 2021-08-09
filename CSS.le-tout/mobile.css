@@ -1,0 +1,29 @@
+
+    html {
+        font-size: 100%;
+    }
+
+
+@media screen and (max-width: 768px) 
+
+{
+   
+.colonne{
+    display: none;
+}
+
+li{
+
+    display: block;
+}
+
+p{
+    font-size: 0.8rem,
+}
+
+ 
+
+.text{
+    padding : 20px;
+    padding-right: 30px;
+}
