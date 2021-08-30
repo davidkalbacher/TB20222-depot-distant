@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+
+    <title>Page 3</title>
+
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <!-- Head -->
+        <div class="row ">
+            <div class="col-8 d-none d-lg-block d-xl-block">
+
+                <img class="w-auto" height="60" src="jarditou_logo.jpg" alt="?" title="Logo">
+            </div>
+            <div class="col-4 text-center d-none d-lg-block d-xl-block">
+                <h1>la qualité depuis 70ans</h1>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-12">
+
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">jarditou.com</a>
+                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tableau</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+
+
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="votre promotion" aria-label="votre promotion">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+
+
+
+        <div class="row ">
+
+            <img class="col-12 img-responsive" src="promotion.jpg" alt="?" title="promotion">
+        </div>
+        <div class="row">
+            <div class="col-12">
+                
+
+                    <fieldset>
+                        <p>*Ces Zones sont obligatoires</p>
+                        <h1>vos Coodornées</h1>
+                       
+                       <form action="http://bienvu.net/script.php" method="post" name="Formulaire_contact">
+                       
+
+                       <div class="form-group">
+                            <label for="formcontrol">Votre nom* : </label>
+                            <input type="text" class="form-control" id="nom_famille" name="Nom" placeholder="Veuillez saisir votre nom" >
+                            <span style="color: red;" id="erreur1"></span>
+                                </div>
+
+                            <div>
+                            <label for="formcontrol1">Votre prenom* : </label>
+                            <input type="text" class="form-control" id="prénom" name="Prénom" placeholder="Veuillez saisir votre prénom" >
+                            <span style="color: red;" id="erreur2"></span>
+                        </div>
+
+                        <label>Sexe*:</label>
+                        <div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="sexe" id="inlineRadio1" value="feminin">
+                                <label class="form-check-label" for="inlineRadio1">Féminin</label><br>
+                                
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="sexe" id="inlineRadio2" value="masculin">
+                                <label class="form-check-label" for="inlineRadio2">Masculin</label><br>
+                            </div>
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="sexe" id="inlineRadio3" value="neutre">
+                                <label class="form-check-label" for="inlineRadio3">neutre</label><br>       
+                          </div>
+                   <br>       <span style="color: red;" id="erreur3"></span>
+                           </div>
+                            
+                        
+                        <br><label for="date">Date de naissance* :</label>
+                        <input type="date" class="form-control" id="date" name="date" >
+                             <span style="color: red;" id="erreur4"></span>
+                        <br>
+                        <div class="form-group">
+                            <label for="code">Code postal* : </label>
+                            <input type="text" class="form-control" id="Code-Postal" name="Code">
+                            <span style="color: red;" id="erreur5"></span>
+                        
+                        </div>
+
+                        <div class="form-group">
+                            <label for="adresse">Adresse : </label>
+                            <input type="text" class="form-control" id="adresse" name="Adresse" ><br>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="ville">Ville : </label>
+                            <input type="text" class="form-control" id="ville" name="Ville" ><br>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email* : </label>
+                            <input type="text" class="form-control" id="email" name="Email" placeholder="Exemple@gmail.com" >
+                            <span style="color:red" id="erreur6"></span> 
+                            <br>
+                        </div>
+
+                        <h1>Votre demande</h1>
+                        <label for="sujet">Sujet* : </label>
+                        <select class="form-control" id="sujet">
+                                <option value="selectionner" selected disabled>Veuillez séléctionner un sujet</option>
+                                <option value="Commandes">Mes commandes</option> 
+                                <option value="Produit">Question sur un produit</option> 
+                                <option value="Reclamation">Réclamation</option> 
+                                <option value="Autres">Autres</option></select>
+                                <span style="color: red;" id="erreur7"></span>
+                            <br>
+
+
+                        <div class="form-group">
+                            <label for="question">Votre question* :</label>
+                            <textarea class="form-control" id="question" rows="3"></textarea>
+                            <span style="color: red;" id="erreur8"></span>
+                        </div>
+
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="accepter">
+                            <label class="form-check-label" for="checkbox">J'accepte le traitement de ce formulaire
+                                </label><br>
+                                <span style="color: red;" id="erreur9"></span>
+                        </div><br>
+
+
+                        <input type="submit" id="envoyer" value="Envoyer" class="btn btn-dark">
+                        <input type="reset" class="btn btn-dark" value="Annuler">
+                       
+
+                    </fieldset>
+                </form>
+           
+        </div>
+
+        <footer>
+<br>
+            <div class="row">
+                <div class="col-12">
+
+                    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="mentionlégales.html">mention légales</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="horaire.html">horaire</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="plandusite">plan du site</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </nav>
+
+                </div>
+            </div>
+
+        </footer>
+
+
+
+    </div>
+
+
+<script src="eval-formulaire.js" ></script>
+</body>
+
+</html>
